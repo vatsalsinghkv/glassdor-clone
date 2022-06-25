@@ -1,0 +1,14 @@
+.hero {
+  margin: 2rem 0;
+
+  &__img {
+    background-color: #000;
+
+    & > img {
+      max-width: 992px;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

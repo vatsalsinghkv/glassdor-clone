@@ -1,0 +1,14 @@
+.card {
+  border-radius: 2px;
+  box-shadow: var(--shadow);
+
+  &.p {
+    padding: 1.6rem;
+  }
+
+  &.section {
+    border: solid 1px var(--color-grey-5);
+    box-shadow: var(--card-shadow);
+    margin-bottom: 1.6rem;
+  }
+}

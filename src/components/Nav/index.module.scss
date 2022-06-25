@@ -1,0 +1,35 @@
+@use '../../sass/variables' as *;
+
+.nav {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--color-grey-5);
+
+  &__content {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: $md) {
+      a {
+        margin-right: auto;
+      }
+    }
+  }
+
+  &__logo {
+    width: 162px;
+    display: flex;
+    align-items: center;
+
+    & > img {
+      width: 100%;
+    }
+  }
+
+  Form {
+    width: 100%;
+
+    @media screen and (max-width: $md) {
+      display: none;
+    }
+  }
+}

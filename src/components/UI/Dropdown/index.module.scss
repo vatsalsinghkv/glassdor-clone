@@ -1,0 +1,40 @@
+.dropdown {
+  position: relative;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+
+  &__btn {
+    &,
+    &:link,
+    &:visited {
+      display: flex;
+      color: inherit;
+      align-items: center;
+      text-transform: inherit;
+      padding: 0.75rem;
+      min-width: 8.8rem;
+      border-radius: 3px;
+      width: 100%;
+      font-size: inherit;
+      font-weight: 700;
+
+      position: relative;
+
+      ion-icon {
+        margin-right: 0.8rem;
+        font-size: 24px;
+        --ionicon-stroke-width: 16px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-grey-5);
+    }
+  }
+
+  &__btn:hover + &__content,
+  &__btn:focus + &__content {
+    display: block;
+  }
+}

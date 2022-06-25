@@ -1,0 +1,24 @@
+.upload {
+  display: flex;
+
+  &__left {
+    margin-right: 1rem;
+    ion-icon {
+      font-size: 32px;
+    }
+  }
+
+  &__right {
+    h1 {
+      font-size: 1.8rem;
+    }
+    p {
+      margin-top: 1rem;
+      font-size: 1.3rem;
+
+      a {
+        color: var(--color-secondary);
+      }
+    }
+  }
+}

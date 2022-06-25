@@ -1,0 +1,26 @@
+.profile-section {
+  text-transform: capitalize;
+  display: flex;
+  align-items: flex-end;
+  height: 7rem;
+  padding: 0 2rem 2rem;
+
+  &__name {
+    font-size: 2.4rem;
+    margin-left: 2rem;
+  }
+}
+
+.active-status {
+  margin-left: auto;
+  color: #7f7f7f;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+
+  ion-icon {
+    font-size: 16px;
+    color: var(--color-primary);
+    margin-right: 0.5rem;
+  }
+}

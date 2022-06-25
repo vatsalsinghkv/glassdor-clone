@@ -1,0 +1,9 @@
+@use '../../sass/variables' as *;
+
+.aside {
+  width: 30rem;
+
+  @media screen and (max-width: $lg-sm) {
+    width: 100%;
+  }
+}

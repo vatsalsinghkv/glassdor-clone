@@ -1,0 +1,28 @@
+@use '../../../../sass/variables' as *;
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 16rem;
+  line-height: 1.2;
+
+  @media screen and (max-width: $sm) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &:not(:last-of-type) {
+    margin-right: 2rem;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 7.5rem;
+  }
+
+  &__left {
+    margin-top: 0.75rem;
+    margin-right: 0.75rem;
+  }
+}

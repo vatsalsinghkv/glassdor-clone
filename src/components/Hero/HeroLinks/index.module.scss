@@ -1,0 +1,53 @@
+@use '../../../sass/variables' as *;
+
+.links {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  margin: 0 2rem;
+  display: flex;
+
+  @media screen and (max-width: $lg-sm) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: $md-sm) {
+    margin: 0;
+  }
+
+  &__nav {
+    list-style: none;
+    display: flex;
+
+    @media screen and (max-width: $md) {
+      justify-content: space-between;
+    }
+
+    @media screen and (max-width: $sm) {
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: $sm-sm) {
+      justify-content: center;
+    }
+  }
+}
+
+.btn-group {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: $lg-sm) {
+    margin: 2rem auto;
+  }
+
+  & > *:first-child {
+    margin-right: 1rem;
+  }
+
+  ion-icon {
+    font-size: 24px;
+    margin-right: 0.75rem;
+    --ionicon-stroke-width: 40px;
+  }
+}

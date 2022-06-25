@@ -1,0 +1,26 @@
+.icon-group {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  ion-icon {
+    font-size: 32px;
+
+    &:not(:last-of-type) {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.account {
+  cursor: pointer;
+
+  &:hover + .content {
+    display: block;
+  }
+}
+
+.content {
+  top: 30px;
+  right: 0;
+}

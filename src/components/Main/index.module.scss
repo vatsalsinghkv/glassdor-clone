@@ -1,0 +1,12 @@
+@use '../../sass/variables' as *;
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+
+  @media screen and (max-width: $lg-sm) {
+    flex-direction: column;
+  }
+}

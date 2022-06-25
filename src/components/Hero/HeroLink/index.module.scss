@@ -1,0 +1,77 @@
+.link {
+  &,
+  &:link,
+  &:visited {
+    text-align: center;
+    padding: 1.2rem 0;
+    display: block;
+    position: relative;
+    transition: all 0.5s;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    background-color: #f1f2f2;
+  }
+
+  &:hover + &__content,
+  &:focus + &__content {
+    display: block;
+  }
+
+  &.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+
+    height: 3px;
+    width: 100%;
+    background-color: var(--color-tertiary);
+  }
+
+  span {
+    display: block;
+    height: 2.5rem;
+  }
+
+  &__item {
+    width: 9rem;
+    position: relative;
+
+    &:not(:last-of-type) {
+      &::after {
+        content: '';
+        position: absolute;
+        top: 12px;
+        right: 0;
+        height: 80%;
+        width: 1px;
+        background-color: #eaeaea;
+      }
+    }
+  }
+
+  &__value {
+    color: #404040;
+
+    ion-icon {
+      font-size: 24px;
+    }
+  }
+
+  &__type {
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      ion-icon {
+        margin-left: 2.5px;
+      }
+    }
+    color: var(--color-secondary);
+  }
+}

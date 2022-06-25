@@ -1,0 +1,33 @@
+@use 'sass:math';
+@use './variables' as *;
+
+/*
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+html {
+  font-size: math.div(100, 16) * 10%; //62.5% - 10px
+  // font-size: 10px;
+
+  @media only screen and (max-width: $lg) {
+    font-size: math.div(100, 16) * 9%;
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-grey-1);
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size);
+
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-weight: 400;
+
+  line-height: 165%;
+}

@@ -1,0 +1,50 @@
+.select-option {
+  &__container {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: #fff;
+    &:hover,
+    &:focus-within {
+      background-color: #e7eaed;
+    }
+
+    &.active {
+      font-weight: 700;
+      background-color: #dde0e3;
+
+      &:hover {
+        background-color: #dde0e3;
+      }
+    }
+
+    ion-icon {
+      font-size: 24px;
+      --ionicon-stroke-width: 64px;
+      visibility: hidden;
+
+      &[className='visible'] {
+        visibility: visible;
+      }
+    }
+  }
+
+  &__label {
+    margin-left: 1rem;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+
+    &:first-of-type {
+      padding-top: 1rem;
+    }
+
+    &:last-of-type {
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__input {
+    display: none;
+  }
+}

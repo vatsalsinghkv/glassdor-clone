@@ -1,0 +1,9 @@
+.card {
+  color: var(--color-text);
+  border-radius: 3px;
+  border: 2px solid #c4c7cc;
+
+  &:hover {
+    border-color: var(--color-grey-3);
+  }
+}

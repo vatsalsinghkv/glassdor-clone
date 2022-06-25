@@ -1,0 +1,13 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+
+  &__input {
+    flex: 1;
+  }
+
+  &__btn {
+    text-transform: capitalize;
+    margin-left: 1rem;
+  }
+}

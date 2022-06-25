@@ -1,0 +1,20 @@
+.dropdown-item {
+  &,
+  &:link,
+  &:visited {
+    background-color: #fff;
+    width: 100%;
+    display: inline-block;
+    color: var(--color-text);
+    text-decoration: none;
+    padding: 1.6rem;
+    transition: all 0.2s;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    background-color: var(--color-grey-5);
+  }
+}

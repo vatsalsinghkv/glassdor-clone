@@ -1,0 +1,34 @@
+.select {
+  z-index: 5;
+  font-size: 1.6rem;
+  position: relative;
+  user-select: none;
+  min-width: 15rem;
+  height: 4rem;
+  text-transform: capitalize;
+
+  &__header {
+    height: 100%;
+    padding: 0 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    & > ion-icon {
+      margin-left: 1rem;
+    }
+  }
+
+  &__options {
+    box-shadow: rgb(196 199 204) 0px 0px 2px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    min-width: inherit;
+    z-index: 10;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+  }
+}

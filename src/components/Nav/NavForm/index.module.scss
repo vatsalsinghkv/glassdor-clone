@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  padding: 0 3rem;
+
+  &__select {
+    margin: 0 1rem;
+  }
+
+  &__input {
+    &:first-child {
+      width: 55%;
+    }
+
+    &:last-of-type {
+      width: 35%;
+      margin-right: 2rem;
+    }
+  }
+}

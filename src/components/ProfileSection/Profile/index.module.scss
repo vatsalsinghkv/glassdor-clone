@@ -1,0 +1,15 @@
+.profile {
+  border: 1px solid #fff;
+  position: relative;
+  display: inline-block;
+  // transform: translateY(-50%);
+  // left: 2rem;
+  z-index: 5;
+  width: max-content;
+
+  & > img {
+    display: block;
+    height: 9rem;
+    width: 9rem;
+  }
+}
