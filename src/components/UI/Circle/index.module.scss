@@ -5,6 +5,8 @@
  *
 *****************************************************************/
 
+@use 'sass:math';
+
 // VARS
 $circle-width: 0.1em;
 $circle-width-hover: 0.05em;
@@ -124,7 +126,7 @@ $bg-color: #fff;
   // loop to rotate all 100 circles
   @for $j from 1 through 100 {
     &.p#{$j} .bar {
-      transform: rotate((360/100 * $j) + deg);
+      transform: rotate((math.div(360, 100) * $j) + deg);
     }
   }
 

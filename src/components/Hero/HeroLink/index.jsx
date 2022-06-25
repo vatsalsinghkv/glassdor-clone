@@ -8,7 +8,7 @@ const HeroLink = ({ type, value, items, active }) => {
 
   return (
     <li className={styles['link__item']}>
-      <a href="#" className={linkClasses}>
+      <a href="/" className={linkClasses}>
         <span className={styles['link__value']}>{value}</span>
         <span className={styles['link__type']}>{type}</span>
       </a>
